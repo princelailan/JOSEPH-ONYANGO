@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools - Joseph Onyango</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="particles">
+        <div class="particle" style="--rand-x: 0.1; --rand-y: 0.2;"></div>
+        <div class="particle" style="--rand-x: 0.3; --rand-y: 0.5;"></div>
+        <div class="particle" style="--rand-x: 0.5; --rand-y: 0.7;"></div>
+        <div class="particle" style="--rand-x: 0.7; --rand-y: 0.3;"></div>
+        <div class="particle" style="--rand-x: 0.9; --rand-y: 0.6;"></div>
+        <div class="particle" style="--rand-x: 0.2; --rand-y: 0.8;"></div>
+        <div class="particle" style="--rand-x: 0.4; --rand-y: 0.1;"></div>
+        <div class="particle" style="--rand-x: 0.6; --rand-y: 0.4;"></div>
+    </div>
+
+    <div class="snowflake-trail"></div>
+
+    <section class="useful-tools-section">
+        <i class="fas fa-toolbox fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+        <h2>Useful Tools</h2>
+        <div class="tools-grid">
+            <div id="calculator-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1587145820266-a8409a6a5248?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-calculator fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Scientific Calculator</h3>
+                <div class="calculator">
+                    <input type="text" id="calc-display" readonly>
+                    <div class="calc-buttons">
+                        <button class="calc-btn">1</button>
+                        <button class="calc-btn">2</button>
+                        <button class="calc-btn">3</button>
+                        <button class="calc-btn">+</button>
+                        <button class="calc-btn">-</button>
+                        <button class="calc-btn">4</button>
+                        <button class="calc-btn">5</button>
+                        <button class="calc-btn">6</button>
+                        <button class="calc-btn">×</button>
+                        <button class="calc-btn">÷</button>
+                        <button class="calc-btn">7</button>
+                        <button class="calc-btn">8</button>
+                        <button class="calc-btn">9</button>
+                        <button class="calc-btn">0</button>
+                        <button class="calc-btn">=</button>
+                        <button class="calc-btn">C</button>
+                        <button class="calc-btn">sin</button>
+                        <button class="calc-btn">cos</button>
+                        <button class="calc-btn">tan</button>
+                        <button class="calc-btn">log</button>
+                        <button class="calc-btn">√</button>
+                        <button class="calc-btn">^</button>
+                    </div>
+                </div>
+            </div>
+            <div id="weather-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067062b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-cloud-sun fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Weather App</h3>
+                <div class="weather-app">
+                    <input type="text" id="weather-city" placeholder="Enter city">
+                    <button id="fetch-weather">Get Weather</button>
+                    <div id="weather-display"></div>
+                </div>
+            </div>
+            <div id="todo-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-list-check fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>To-Do List</h3>
+                <div class="todo-app">
+                    <input type="text" id="todo-input" placeholder="Add a task">
+                    <button id="add-todo">Add</button>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+            <div id="currency-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-money-bill-wave fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Currency Converter</h3>
+                <div class="currency-converter">
+                    <input type="number" id="currency-amount" placeholder="Amount">
+                    <select id="from-currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="KES">KES</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                    <select id="to-currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="KES">KES</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                    <button id="convert-currency">Convert</button>
+                    <div id="currency-result"></div>
+                </div>
+            </div>
+            <div id="timer-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1550295539-39e0f3f9d8e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-stopwatch fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Timer/Stopwatch</h3>
+                <div class="timer-app">
+                    <div id="timer-display">00:00:00</div>
+                    <div class="timer-controls">
+                        <button id="start-stopwatch">Start Stopwatch</button>
+                        <button id="stop-stopwatch">Stop</button>
+                        <button id="reset-stopwatch">Reset</button>
+                    </div>
+                    <div class="countdown-controls">
+                        <input type="number" id="countdown-input" placeholder="Seconds">
+                        <button id="start-countdown">Start Countdown</button>
+                    </div>
+                </div>
+            </div>
+            <div id="unit-converter-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1593697821032-5d5d4d4b8f5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-ruler fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Unit Converter</h3>
+                <div class="unit-converter">
+                    <input type="number" id="unit-amount" placeholder="Amount">
+                    <select id="unit-type">
+                        <option value="length">Length</option>
+                        <option value="weight">Weight</option>
+                        <option value="temperature">Temperature</option>
+                    </select>
+                    <select id="from-unit"></select>
+                    <select id="to-unit"></select>
+                    <button id="convert-unit">Convert</button>
+                    <div id="unit-result"></div>
+                </div>
+            </div>
+            <div id="random-number-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-dice fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Random Number Generator</h3>
+                <div class="random-number-generator">
+                    <input type="number" id="min-range" placeholder="Min">
+                    <input type="number" id="max-range" placeholder="Max">
+                    <button id="generate-number">Generate</button>
+                    <div id="number-result"></div>
+                </div>
+            </div>
+            <div id="color-picker-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1557214958-3a29b6e7e4e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-palette fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>Color Picker</h3>
+                <div class="color-picker">
+                    <input type="color" id="color-input">
+                    <div id="color-display" style="height: 100px;"></div>
+                    <div id="color-values"></div>
+                </div>
+            </div>
+            <div id="bmi-calculator-tool" class="tool-card" style="background-image: url('https://images.unsplash.com/photo-1571019614242-0cc523e4dc36?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <i class="fas fa-weight-scale fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+                <h3>BMI Calculator</h3>
+                <div class="bmi-calculator">
+                    <input type="number" id="weight-input" placeholder="Weight (kg)">
+                    <input type="number" id="height-input" placeholder="Height (cm)">
+                    <button id="calculate-bmi">Calculate</button>
+                    <div id="bmi-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Joseph Onyango. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

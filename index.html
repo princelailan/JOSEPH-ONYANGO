@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Onyango - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="particles">
+        <div class="particle" style="--rand-x: 0.1; --rand-y: 0.2;"></div>
+        <div class="particle" style="--rand-x: 0.3; --rand-y: 0.5;"></div>
+        <div class="particle" style="--rand-x: 0.5; --rand-y: 0.7;"></div>
+        <div class="particle" style="--rand-x: 0.7; --rand-y: 0.3;"></div>
+        <div class="particle" style="--rand-x: 0.9; --rand-y: 0.6;"></div>
+        <div class="particle" style="--rand-x: 0.2; --rand-y: 0.8;"></div>
+        <div class="particle" style="--rand-x: 0.4; --rand-y: 0.1;"></div>
+        <div class="particle" style="--rand-x: 0.6; --rand-y: 0.4;"></div>
+    </div>
+
+    <div class="snowflake-trail"></div>
+
+    <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>Hello, I'm Joseph Onyango</h1>
+            <h2>Software Engineer & Web Developer</h2>
+            <p>I create beautiful, functional, and user-friendly web applications to solve real-world problems.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <i class="fas fa-info-circle fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+        <h2>Welcome to My Portfolio</h2>
+        <p>Explore my projects, skills, and services to see how I can help bring your ideas to life.</p>
+    </section>
+
+    <section class="gallery-section">
+        <i class="fas fa-image fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 1">
+                <p>Project Showcase 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 2">
+                <p>Project Showcase 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 3">
+                <p>Project Showcase 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 4">
+                <p>Project Showcase 4</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Joseph Onyango. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Joseph Onyango</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="particles">
+        <div class="particle" style="--rand-x: 0.1; --rand-y: 0.2;"></div>
+        <div class="particle" style="--rand-x: 0.3; --rand-y: 0.5;"></div>
+        <div class="particle" style="--rand-x: 0.5; --rand-y: 0.7;"></div>
+        <div class="particle" style="--rand-x: 0.7; --rand-y: 0.3;"></div>
+        <div class="particle" style="--rand-x: 0.9; --rand-y: 0.6;"></div>
+        <div class="particle" style="--rand-x: 0.2; --rand-y: 0.8;"></div>
+        <div class="particle" style="--rand-x: 0.4; --rand-y: 0.1;"></div>
+        <div class="particle" style="--rand-x: 0.6; --rand-y: 0.4;"></div>
+    </div>
+
+    <div class="snowflake-trail"></div>
+
+    <section class="projects-section">
+        <i class="fas fa-project-diagram fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <img src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 1">
+                <h3>Online Learning Platform</h3>
+                <p>A scalable e-learning solution with video streaming and quizzes.</p>
+            </div>
+            <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 2">
+                <h3>Portfolio Generator</h3>
+                <p>A tool to create personalized portfolios with drag-and-drop features.</p>
+            </div>
+            <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1618401471353-7f67e38e56a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'); background-size: cover; background-position: center;">
+                <img src="https://images.unsplash.com/photo-1618401471353-7f67e38e56a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Project 3">
+                <h3>Inventory Management System</h3>
+                <p>A full-stack app for tracking stock with real-time updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Joseph Onyango. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
