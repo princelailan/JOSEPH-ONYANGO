@@ -1,6 +1,6 @@
 🌟 Joseph Onyango’s Super-Duper Portfolio Website! 🎉
 
-                                                                 https://princelailan.github.io/JOSEPH-ONYANGO/
+https://princelailan.github.io/JOSEPH-ONYANGO/
                                                                  
 🌈 What’s This All About? 🌟
 
