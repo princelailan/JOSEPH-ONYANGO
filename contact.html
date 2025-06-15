@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contact - Joseph Onyango</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
     <nav>
@@ -45,6 +45,7 @@
         <h2>Contact Me 📬</h2>
         <div class="contact-content">
             <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+
             <div class="contact-info">
                 <p><i class="fas fa-envelope" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Email: <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
                 <p><i class="fas fa-phone" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Phone: +254 101 710 049 / +254 100 585 264</p>
@@ -52,10 +53,16 @@
             </div>
 
             <form class="contact-form" action="mailto:jesuspromisesmedia@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <label for="name">👤 Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Achieng' Mwende" required>
+
+                <label for="email">📧 Your Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. achieng@email.com" required>
+
+                <label for="message">💬 Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me what’s up..." required></textarea>
+
+                <button type="submit">🚀 Send Message</button>
             </form>
         </div>
     </section>
