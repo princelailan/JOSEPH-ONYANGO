@@ -1,87 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact - Joseph Onyango</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Joseph Onyango</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    nav {
+      background: #222;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav select {
+      padding: 0.3rem;
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #555;
+    }
+
+    .particles {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #ffeb3b;
+      border-radius: 50%;
+      animation: float 10s infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+      }
+    }
+
+    .contact-section {
+      position: relative;
+      padding: 4rem 1rem;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    }
+
+    .contact-content {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      padding: 2rem;
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    .contact-info a {
+      color: #ffeb3b;
+    }
+
+    .contact-form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #ffeb3b;
+      border: none;
+      color: #111;
+      font-weight: bold;
+      padding: 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .social-section {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1a1a1a;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #000;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Snowflake trail simulation */
+    .snowflake-trail::before {
+      content: '❄ ❄ ❄ ❄ ❄';
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 10%;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="tools.html">Tools</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <select id="language-select">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
 
-    <div class="particles">
-        <div class="particle" style="--rand-x: 0.1; --rand-y: 0.2;"></div>
-        <div class="particle" style="--rand-x: 0.3; --rand-y: 0.5;"></div>
-        <div class="particle" style="--rand-x: 0.5; --rand-y: 0.7;"></div>
-        <div class="particle" style="--rand-x: 0.7; --rand-y: 0.3;"></div>
-        <div class="particle" style="--rand-x: 0.9; --rand-y: 0.6;"></div>
-        <div class="particle" style="--rand-x: 0.2; --rand-y: 0.8;"></div>
-        <div class="particle" style="--rand-x: 0.4; --rand-y: 0.1;"></div>
-        <div class="particle" style="--rand-x: 0.6; --rand-y: 0.4;"></div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+    </li>
+  </ul>
+</nav>
+
+<div class="particles">
+  <div class="particle" style="top:20%; left:10%;"></div>
+  <div class="particle" style="top:40%; left:30%;"></div>
+  <div class="particle" style="top:60%; left:50%;"></div>
+  <div class="particle" style="top:80%; left:70%;"></div>
+  <div class="particle" style="top:90%; left:90%;"></div>
+</div>
+
+<div class="snowflake-trail"></div>
+
+<section class="contact-section">
+  <i class="fas fa-envelope fa-2x" style="color: #ffeb3b;"></i>
+  <h2>Contact Me 📬</h2>
+  <div class="contact-content">
+    <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope" style="color: #ffeb3b;"></i> Email: <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
+      <p><i class="fas fa-phone" style="color: #ffeb3b;"></i> Phone: +254 101 710 049 / +254 100 585 264</p>
+      <p><i class="fas fa-map-marker-alt" style="color: #ffeb3b;"></i> Location: Nairobi, Kenya</p>
     </div>
 
-    <div class="snowflake-trail"></div>
+    <form class="contact-form" action="mailto:jesuspromisesmedia@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
-    <section class="contact-section" style="background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
-        <i class="fas fa-envelope fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
-        <h2>Contact Me 📬</h2>
-        <div class="contact-content">
-            <p>Feel free to reach out to me for any inquiries or collaborations.</p>
+<section class="social-section">
+  <i class="fas fa-share-alt fa-2x" style="color: #ffeb3b;"></i>
+  <h2>Follow Me 🌍</h2>
+  <div class="social-links">
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+  </div>
+</section>
 
-            <div class="contact-info">
-                <p><i class="fas fa-envelope" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Email: <a href="mailto:jesuspromisesmedia@gmail.com">jesuspromisesmedia@gmail.com</a></p>
-                <p><i class="fas fa-phone" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Phone: +254 101 710 049 / +254 100 585 264</p>
-                <p><i class="fas fa-map-marker-alt" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Location: Nairobi, Kenya</p>
-            </div>
+<footer>
+  <p>© 2025 Joseph Onyango. All rights reserved.</p>
+</footer>
 
-            <form class="contact-form" action="mailto:jesuspromisesmedia@gmail.com" method="post" enctype="text/plain">
-                <label for="name">👤 Your Name</label>
-                <input type="text" id="name" name="name" placeholder="e.g. Achieng' Mwende" required>
-
-                <label for="email">📧 Your Email</label>
-                <input type="email" id="email" name="email" placeholder="e.g. achieng@email.com" required>
-
-                <label for="message">💬 Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell me what’s up..." required></textarea>
-
-                <button type="submit">🚀 Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="social-section">
-        <i class="fas fa-share-alt fa-2x" style="color: #ffeb3b; margin-bottom: 0.5rem;"></i>
-        <h2>Follow Me 🌍</h2>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin" style="color: #ffeb3b; margin-right: 0.5rem;"></i>LinkedIn</a>
-            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github" style="color: #ffeb3b; margin-right: 0.5rem;"></i>GitHub</a>
-            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter" style="color: #ffeb3b; margin-right: 0.5rem;"></i>Twitter</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Joseph Onyango. All rights reserved.</p>
-    </footer>
-
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
